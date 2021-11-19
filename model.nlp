@@ -1,0 +1,901 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "nlu": {
+      "useNoneFeature": false
+    },
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager",
+      "useNoneFeature": false
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "useNoneFeature": false,
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "odabo": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "o,odigba": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "odaaro": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "kale": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "ku,ojumo": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "iyaleta,ku": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bawoni": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "daada,ni,se": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "haaro": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "bawo,ni,o,se,wa": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "bawo,ni,nibe,o,yen": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "ina,tan": {
+            "intent": "command.light",
+            "domain": "default"
+          },
+          "ina,pa": {
+            "intent": "command.light",
+            "domain": "default"
+          },
+          "imol,tan": {
+            "intent": "command.light",
+            "domain": "default"
+          },
+          "imol,pa": {
+            "intent": "command.light",
+            "domain": "default"
+          },
+          "fan,tan": {
+            "intent": "command.fan",
+            "domain": "default"
+          },
+          "fan,pa": {
+            "intent": "command.fan",
+            "domain": "default"
+          },
+          "aifef,pa": {
+            "intent": "command.fan",
+            "domain": "default"
+          },
+          "aifef,tan": {
+            "intent": "command.fan",
+            "domain": "default"
+          },
+          "e,melo,ni,odun,omo": {
+            "intent": "smalltalk.age",
+            "domain": "default"
+          },
+          "ibi,ni,nigba,ojo,re,wo": {
+            "intent": "smalltalk.age",
+            "domain": "default"
+          },
+          "bi,ni,nigbawo,o,won": {
+            "intent": "smalltalk.age",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "command.light": "default",
+          "command.fan": "default",
+          "smalltalk.age": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "odabo",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "odigba o",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "odaaro",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "kale",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "ku ojumo",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "ku iyaleta",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bawoni",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "se daada ni",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "haaro",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bawo ni o se wa?",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bawo ni nibe yen o",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "tan ina",
+            "intent": "command.light"
+          },
+          {
+            "domain": "default",
+            "utterance": "pa ina",
+            "intent": "command.light"
+          },
+          {
+            "domain": "default",
+            "utterance": "tan imole",
+            "intent": "command.light"
+          },
+          {
+            "domain": "default",
+            "utterance": "pa imole",
+            "intent": "command.light"
+          },
+          {
+            "domain": "default",
+            "utterance": "tan fan",
+            "intent": "command.fan"
+          },
+          {
+            "domain": "default",
+            "utterance": "pa fan",
+            "intent": "command.fan"
+          },
+          {
+            "domain": "default",
+            "utterance": "pa aifefe",
+            "intent": "command.fan"
+          },
+          {
+            "domain": "default",
+            "utterance": "tan aifefe",
+            "intent": "command.fan"
+          },
+          {
+            "domain": "default",
+            "utterance": "omo odun melo ni e?",
+            "intent": "smalltalk.age"
+          },
+          {
+            "domain": "default",
+            "utterance": "nigba wo ni ojo ibi re?",
+            "intent": "smalltalk.age"
+          },
+          {
+            "domain": "default",
+            "utterance": "Nigbawo ni wọn bi ọ?",
+            "intent": "smalltalk.age"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "odabo": 1,
+              "odigba": 1,
+              "o": 1,
+              "odaaro": 1,
+              "kale": 1,
+              "ku": 1,
+              "ojumo": 1,
+              "iyaleta": 1,
+              "bawoni": 1,
+              "se": 1,
+              "daada": 1,
+              "ni": 1,
+              "haaro": 1,
+              "bawo": 1,
+              "wa": 1,
+              "nibe": 1,
+              "yen": 1,
+              "tan": 1,
+              "ina": 1,
+              "pa": 1,
+              "imol": 1,
+              "fan": 1,
+              "aifef": 1,
+              "omo": 1,
+              "odun": 1,
+              "melo": 1,
+              "e": 1,
+              "nigba": 1,
+              "wo": 1,
+              "ojo": 1,
+              "ibi": 1,
+              "re": 1,
+              "nigbawo": 1,
+              "won": 1,
+              "bi": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "command.light": 1,
+              "command.fan": 1,
+              "smalltalk.age": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "odabo": 1,
+                "odigba": 1,
+                "o": 1,
+                "odaaro": 1,
+                "kale": 1,
+                "ku": 1,
+                "ojumo": 1,
+                "iyaleta": 1
+              },
+              "greetings.hello": {
+                "bawoni": 1,
+                "se": 1,
+                "daada": 1,
+                "ni": 1,
+                "haaro": 1,
+                "bawo": 1,
+                "o": 1,
+                "wa": 1,
+                "nibe": 1,
+                "yen": 1
+              },
+              "command.light": {
+                "tan": 1,
+                "ina": 1,
+                "pa": 1,
+                "imol": 1
+              },
+              "command.fan": {
+                "tan": 1,
+                "fan": 1,
+                "pa": 1,
+                "aifef": 1
+              },
+              "smalltalk.age": {
+                "omo": 1,
+                "odun": 1,
+                "melo": 1,
+                "ni": 1,
+                "e": 1,
+                "nigba": 1,
+                "wo": 1,
+                "ojo": 1,
+                "ibi": 1,
+                "re": 1,
+                "nigbawo": 1,
+                "won": 1,
+                "bi": 1,
+                "o": 1
+              }
+            },
+            "featuresToIntent": {
+              "odabo": [
+                "greetings.bye"
+              ],
+              "odigba": [
+                "greetings.bye"
+              ],
+              "o": [
+                "greetings.bye",
+                "greetings.hello",
+                "smalltalk.age"
+              ],
+              "odaaro": [
+                "greetings.bye"
+              ],
+              "kale": [
+                "greetings.bye"
+              ],
+              "ku": [
+                "greetings.bye"
+              ],
+              "ojumo": [
+                "greetings.bye"
+              ],
+              "iyaleta": [
+                "greetings.bye"
+              ],
+              "bawoni": [
+                "greetings.hello"
+              ],
+              "se": [
+                "greetings.hello"
+              ],
+              "daada": [
+                "greetings.hello"
+              ],
+              "ni": [
+                "greetings.hello",
+                "smalltalk.age"
+              ],
+              "haaro": [
+                "greetings.hello"
+              ],
+              "bawo": [
+                "greetings.hello"
+              ],
+              "wa": [
+                "greetings.hello"
+              ],
+              "nibe": [
+                "greetings.hello"
+              ],
+              "yen": [
+                "greetings.hello"
+              ],
+              "tan": [
+                "command.light",
+                "command.fan"
+              ],
+              "ina": [
+                "command.light"
+              ],
+              "pa": [
+                "command.light",
+                "command.fan"
+              ],
+              "imol": [
+                "command.light"
+              ],
+              "fan": [
+                "command.fan"
+              ],
+              "aifef": [
+                "command.fan"
+              ],
+              "omo": [
+                "smalltalk.age"
+              ],
+              "odun": [
+                "smalltalk.age"
+              ],
+              "melo": [
+                "smalltalk.age"
+              ],
+              "e": [
+                "smalltalk.age"
+              ],
+              "nigba": [
+                "smalltalk.age"
+              ],
+              "wo": [
+                "smalltalk.age"
+              ],
+              "ojo": [
+                "smalltalk.age"
+              ],
+              "ibi": [
+                "smalltalk.age"
+              ],
+              "re": [
+                "smalltalk.age"
+              ],
+              "nigbawo": [
+                "smalltalk.age"
+              ],
+              "won": [
+                "smalltalk.age"
+              ],
+              "bi": [
+                "smalltalk.age"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "useNoneFeature": false,
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "odabo",
+                "odigba",
+                "o",
+                "odaaro",
+                "kale",
+                "ku",
+                "ojumo",
+                "iyaleta",
+                "bawoni",
+                "se",
+                "daada",
+                "ni",
+                "haaro",
+                "bawo",
+                "wa",
+                "nibe",
+                "yen",
+                "tan",
+                "ina",
+                "pa",
+                "imol",
+                "fan",
+                "aifef",
+                "omo",
+                "odun",
+                "melo",
+                "e",
+                "nigba",
+                "wo",
+                "ojo",
+                "ibi",
+                "re",
+                "nigbawo",
+                "won",
+                "bi"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "command.light",
+                "command.fan",
+                "smalltalk.age"
+              ],
+              "perceptrons": [
+                [
+                  8.120407104492188,
+                  5.754092693328857,
+                  2.5749268531799316,
+                  8.110347747802734,
+                  8.064884185791016,
+                  5.540087699890137,
+                  2.7796316146850586,
+                  2.7603495121002197,
+                  -5.666534900665283,
+                  -1.42431640625,
+                  -0.6062037348747253,
+                  -4.500030994415283,
+                  -5.620603561401367,
+                  -1.8415573835372925,
+                  -0.7532058358192444,
+                  -1.088168740272522,
+                  -1.088168740272522,
+                  -3.963120937347412,
+                  -1.9962059259414673,
+                  -3.9632980823516846,
+                  -1.9796419143676758,
+                  -1.9764925241470337,
+                  -1.9724725484848022,
+                  -0.36027371883392334,
+                  -0.36027371883392334,
+                  -0.36027371883392334,
+                  -0.36027371883392334,
+                  -0.28826385736465454,
+                  -0.28826385736465454,
+                  -0.28826385736465454,
+                  -0.28826385736465454,
+                  -0.28826385736465454,
+                  -1.338079810142517,
+                  -1.338079810142517,
+                  -1.338079810142517,
+                  5.941751554599377
+                ],
+                [
+                  -3.0000669956207275,
+                  -2.418344259262085,
+                  -0.7531214356422424,
+                  -2.958472967147827,
+                  -2.9297802448272705,
+                  -2.1139442920684814,
+                  -1.0653795003890991,
+                  -1.0471453666687012,
+                  10.723294258117676,
+                  4.613139629364014,
+                  3.7542667388916016,
+                  2.739469289779663,
+                  10.701508522033691,
+                  3.600719451904297,
+                  0.8596847057342529,
+                  2.739840030670166,
+                  2.739840030670166,
+                  -2.155769109725952,
+                  -1.097482442855835,
+                  -2.156261444091797,
+                  -1.0787205696105957,
+                  -1.0700782537460327,
+                  -1.0650599002838135,
+                  -1.4896996021270752,
+                  -1.4896996021270752,
+                  -1.4896996021270752,
+                  -1.4896996021270752,
+                  -1.1918474435806274,
+                  -1.1918474435806274,
+                  -1.1918474435806274,
+                  -1.1918474435806274,
+                  -1.1918474435806274,
+                  -1.8647229671478271,
+                  -1.8647229671478271,
+                  -1.8647229671478271,
+                  3.215417498008871
+                ],
+                [
+                  -0.9092214107513428,
+                  -0.43873536586761475,
+                  -0.6715050935745239,
+                  -0.9020402431488037,
+                  -0.8980004191398621,
+                  -0.7389781475067139,
+                  -0.3780250549316406,
+                  -0.3430972099304199,
+                  -0.8914428353309631,
+                  -0.1720142513513565,
+                  -0.13548725843429565,
+                  -0.8220037817955017,
+                  -0.8862645626068115,
+                  -0.05294400453567505,
+                  -0.02490626834332943,
+                  -0.018547268584370613,
+                  -0.018547268584370613,
+                  4.161369800567627,
+                  9.220338821411133,
+                  4.159829616546631,
+                  9.213423728942871,
+                  -5.058732032775879,
+                  -5.055057048797607,
+                  -0.18476396799087524,
+                  -0.18476396799087524,
+                  -0.18476396799087524,
+                  -0.18476396799087524,
+                  -0.16315193474292755,
+                  -0.16315193474292755,
+                  -0.16315193474292755,
+                  -0.16315193474292755,
+                  -0.16315193474292755,
+                  -0.13551169633865356,
+                  -0.13551169633865356,
+                  -0.13551169633865356,
+                  0.9004910831576312
+                ],
+                [
+                  -0.8911550045013428,
+                  -0.46516847610473633,
+                  -0.7800199389457703,
+                  -0.87010258436203,
+                  -0.8562077283859253,
+                  -0.8638293743133545,
+                  -0.4303464889526367,
+                  -0.38686659932136536,
+                  -0.8371442556381226,
+                  -0.20668484270572662,
+                  -0.15433068573474884,
+                  -1.071393609046936,
+                  -0.8288449048995972,
+                  -0.07188580185174942,
+                  -0.033805493265390396,
+                  -0.025169095024466515,
+                  -0.025169095024466515,
+                  4.2116289138793945,
+                  -5.03096342086792,
+                  4.2134575843811035,
+                  -5.024107456207275,
+                  9.243673324584961,
+                  9.237825393676758,
+                  -0.24714845418930054,
+                  -0.24714845418930054,
+                  -0.24714845418930054,
+                  -0.24714845418930054,
+                  -0.2181466817855835,
+                  -0.2181466817855835,
+                  -0.2181466817855835,
+                  -0.2181466817855835,
+                  -0.2181466817855835,
+                  -0.1810244619846344,
+                  -0.1810244619846344,
+                  -0.1810244619846344,
+                  0.8251710381267782
+                ],
+                [
+                  -0.3956092894077301,
+                  -0.6120395660400391,
+                  0.36347123980522156,
+                  -0.3639817535877228,
+                  -0.35195979475975037,
+                  -0.4452592432498932,
+                  -0.20956607162952423,
+                  -0.1877700239419937,
+                  -0.32567766308784485,
+                  -2.5979626178741455,
+                  -1.5841864347457886,
+                  3.9319536685943604,
+                  -0.2772485315799713,
+                  -2.239393472671509,
+                  -0.9124267101287842,
+                  -1.2195955514907837,
+                  -1.2195955514907837,
+                  -0.2900412082672119,
+                  -0.16520053148269653,
+                  -0.2822738587856293,
+                  -0.14614497125148773,
+                  -0.13124746084213257,
+                  -0.11737073212862015,
+                  2.528733730316162,
+                  2.528733730316162,
+                  2.528733730316162,
+                  2.528733730316162,
+                  2.0229995250701904,
+                  2.0229995250701904,
+                  2.0229995250701904,
+                  2.0229995250701904,
+                  2.0229995250701904,
+                  3.2505064010620117,
+                  3.2505064010620117,
+                  3.2505064010620117,
+                  0.23878687179461944
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "odabo"
+      ],
+      [
+        "en",
+        "odigba o"
+      ],
+      [
+        "en",
+        "odaaro"
+      ],
+      [
+        "en",
+        "kale"
+      ],
+      [
+        "en",
+        "ku ojumo"
+      ],
+      [
+        "en",
+        "ku iyaleta"
+      ],
+      [
+        "en",
+        "bawoni"
+      ],
+      [
+        "en",
+        "se daada ni"
+      ],
+      [
+        "en",
+        "haaro"
+      ],
+      [
+        "en",
+        "Bawo ni o se wa?"
+      ],
+      [
+        "en",
+        "Bawo ni nibe yen o"
+      ],
+      [
+        "en",
+        "tan ina"
+      ],
+      [
+        "en",
+        "pa ina"
+      ],
+      [
+        "en",
+        "tan imole"
+      ],
+      [
+        "en",
+        "pa imole"
+      ],
+      [
+        "en",
+        "tan fan"
+      ],
+      [
+        "en",
+        "pa fan"
+      ],
+      [
+        "en",
+        "pa aifefe"
+      ],
+      [
+        "en",
+        "tan aifefe"
+      ],
+      [
+        "en",
+        "omo odun melo ni e?"
+      ],
+      [
+        "en",
+        "nigba wo ni ojo ibi re?"
+      ],
+      [
+        "en",
+        "Nigbawo ni wọn bi ọ?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "odi gba"
+          },
+          {
+            "answer": "odaaro"
+          },
+          {
+            "answer": "inu mi dun ati ba e soro"
+          },
+          {
+            "answer": "Ma a ri e laipe"
+          },
+          {
+            "answer": "nigbamii"
+          },
+          {
+            "answer": "titi a o tun pade"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "pele o"
+          },
+          {
+            "answer": "igbadun"
+          },
+          {
+            "answer": "Pẹlẹ o bawo ni"
+          },
+          {
+            "answer": "kini mole shey fun e"
+          }
+        ],
+        "command.fan": [
+          {
+            "answer": "fan ti wa ni pipade"
+          },
+          {
+            "answer": "mo ti pa fan"
+          },
+          {
+            "answer": "mo ti tan fan"
+          }
+        ],
+        "command.light": [
+          {
+            "answer": "ina ti tan"
+          },
+          {
+            "answer": "mo ti pa ina naa"
+          }
+        ],
+        "smalltalk.age": [
+          {
+            "answer": "omo odun merinlelogun ni mi"
+          },
+          {
+            "answer": "A bi mi ni ọdun 1996"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
