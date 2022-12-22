@@ -1,4 +1,4 @@
-### Control Of  Home Authomation Using Yoruba Telegram Chat Bot
+## Home Authomation Using A.I Yoruba Telegram Chat Bot
 
 Ayobol bot is an interactive yoruba bot , that controls home devices using yoruba language . users are able to interact and communicate with the bot . and issue command in real time to devices over the internet.
 These devices listens to websocket commands and sends back their states using websockets also.
